@@ -65,7 +65,7 @@ def main(input_wav, output_wav, ckpt_path):
     C = chunk_size * samplerate  # chunk_size seconds to samples
     N = overlap
     step = C // N
-    fade_size = 3 * 44100 # 3 seconds
+    fade_size = 3 * 44100 # 3 seconds time
     print(f"N = {N} | C = {C} | step = {step} | fade_size = {fade_size}")
     
     border = C - step
